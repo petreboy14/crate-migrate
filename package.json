@@ -1,0 +1,39 @@
+{
+  "name": "crate-migrate",
+  "version": "0.0.1",
+  "description": "A migration CLI for CrateDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petreboy14/crate-migrate.git"
+  },
+  "keywords": [
+    "crate",
+    "migration"
+  ],
+  "author": "Peter Henning",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petreboy14/crate-migrate/issues"
+  },
+  "homepage": "https://github.com/petreboy14/crate-migrate#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "node-crate": "^2.0.3",
+    "redefine": "^0.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.5",
+    "nyc": "^11.6.0"
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "html"
+    ]
+  }
+}
